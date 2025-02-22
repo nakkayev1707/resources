@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.NET Topics Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+	<h2>Working on mistakes</h2>
+    <ul>
+		<li><strong>1) MS SQL:</strong> SQL - Group By, Having (also difference with Where), Aggregate Functions, Transactions, Optimizations, Triggers - </li>
+		<li><strong>2) Delegates:</strong> Func, Action, Expressions and etc.</li>
+		<li><strong>3) c# Extension methods:</strong></li>
+		<li><strong>4) Algorithms:</strong></li>
+		<li><strong>5) Docker, Rabbitmq, xUnit </strong> </li>
+    </ul>
+
+    <h2>.NET Fundamental Topics</h2>
+    <ul>
+        <li><strong>1) Datetime:</strong> Datetime is a value type - done.</li>
+        <li><strong>2) Static Constructor:</strong> Static constructor is called even if a new object is created - done.</li>
+        <li><strong>3) Exception Handling:</strong> Exception in finally block causes the application to stop (throw; - rethrow ex with keeping stack trace, throw ex or new Exception creates new ex with losing original stack trace) - done.</li>
+        <li><strong>4) SQL Execution Plan:</strong> SQL execution plan is a set of instructions executed during SQL queries. It helps to get more information about executed SQL queries - done.</li>
+        <li><strong>5) Async Await:</strong> Async Await is a mechanism for asynchronous programming - done, repeat.</li>
+        <li><strong>6) Nullable:</strong> Nullable is a value type (because it is struct) - done.</li>
+        <li><strong>7) Garbage Collector:</strong> Garbage collector has 3 generations (0, 1, 2) - done, repeat.</li>
+        <li><strong>8) IDisposable:</strong> Using automatically calls Dispose method of IDisposable interface - done, repeat.</li>
+        <li><strong>9) Using:</strong> Using is equivalent to try {} finally {} - done.</li>
+        <li><strong>10) Multithreading:</strong> Multithreading involves locks, mutex, threads, tasks, etc. - done, repeat.</li>
+        <li><strong>11) SelectMany() in LINQ and EF Core:</strong> SelectMany() in LINQ and EF Core allows flattening of nested collections - done.</li>
+        <li><strong>12) AppDomain:</strong> AppDomain is an isolation boundary within which .NET applications execute - done, repeat.</li>
+        <li><strong>13) Yield in foreach:</strong> Yield in foreach allows deferred execution in IEnumerable and other collections - done.</li>
+        <li><strong>14) Overriding and Overloading:</strong>Overriding - runtime, dynamic polymorphism (same name same signature) Overloading same name, different signature</li>
+        <li><strong>15) Boxing and Unboxing:</strong> Boxing converts value types to reference types, unboxing converts reference types to value types - done, repeat value, reference, and pointer types.</li>
+        <li><strong>16) Asible and GitLab CI/CD Pipelines:</strong> Asible and GitLab CI/CD Pipelines are tools for automation and continuous integration/continuous deployment - </li>
+        <li><strong>17) Abstraction and Encapsulation:</strong> Abstraction is the concept of hiding implementation details, encapsulation is bundling data and methods that operate on the data into a single unit - done.</li>
+        <li><strong>18) Transaction Level:</strong> Transaction level determines the scope and isolation level of a transaction - done.</li>
+        <li><strong>19) Fixed Keyword:</strong> Fixed keyword is used in unsafe code to pin a pointer in memory - repeat.</li>
+        <li><strong>20) Weak Reference:</strong> Weak reference allows an object to be garbage collected if there are no strong references to it - done.</li>
+        <li><strong>21) Composition and Inheritance:</strong> Composition is the concept of creating complex objects by combining simpler ones, inheritance is the mechanism of basing an object or class upon another object or class - done.</li>
+        <li><strong>22) Difference Between Functional and OOP Programming:</strong> Functional programming emphasizes immutable data and pure functions, while OOP focuses on objects and their interactions - </li>
+        <li><strong>23) Read About GAC:</strong> Global Assembly Cache (GAC) is a machine-wide cache used by .NET to store assemblies - </li>
+        <li><strong>24) Read About DLL Hell Problem:</strong> DLL Hell refers to issues arising from incompatible or missing DLL versions - </li>
+        <li><strong>25) Boxing and Casting Difference:</strong> Boxing converts value types to reference types implicitly, while casting converts reference types to another type explicitly - </li>
+        <li><strong>26) Reflection:</strong> Reflection provides a way to inspect types, methods, and properties at runtime. It's useful for tasks like dynamically loading assemblies, creating instances of types, and invoking methods - </li>
+        <li><strong>27) Out, Ref, and In:</strong> Out parameters are used to return multiple values from a method, ref parameters allow a method to modify the value of the argument, in parameters indicate that an argument is passed by reference but not modified by the called method - </li>
+        <li><strong>28) Diamond Problem in C#:</strong> Diamond problem occurs in multiple inheritance when a class inherits from two classes that have a common ancestor. It leads to ambiguity in method resolution - </li>
+        <li><strong>29) Access Modifiers:</strong> Access modifiers control the visibility and accessibility of types and members in C# - </li>
+        <li><strong>30) Difference Between Interface and Abstract Class:</strong> Interfaces define contracts that classes must implement, abstract classes provide a partial implementation and can contain concrete members - done.</li>
+        <li><strong>31) Deferred Execution in LINQ:</strong> Deferred execution means that the execution of an operation is delayed until its results are needed - </li>
+        <li><strong>32) Concurrent Collections:</strong> Concurrent collections are thread-safe collections provided by .NET for concurrent access from multiple threads - </li>
+        <li><strong>33) Keep Alive in GC:</strong> Keep alive in garbage collection is a technique to prevent objects from being prematurely collected by the garbage collector - usage is to prevent object cleaning by GC.</li>
+        <li><strong>34) Finalize and Dispose Difference:</strong> Finalize is a method called by the garbage collector before reclaiming an object's memory, Dispose is a method used to release unmanaged resources explicitly - </li>
+        <li><strong>35) Const and Readonly:</strong> Const fields are compile-time constants, readonly fields can be assigned at runtime but only in the constructor or declaration - </li>
+        <li><strong>36) Securestring in C#:</strong> SecureString is a type provided by .NET to securely store sensitive information like passwords - </li>
+        <li><strong>37) String.Intern:</strong> String.Intern method returns a canonical representation of a string, which can help in reducing memory usage - </li>
+        <li><strong>38) Parrallel in C#:</strong> Parallel class in C# provides parallel versions of LINQ operations and loop iterations - </li>
+        <li><strong>39) Cross Join in SQL:</strong> Cross join returns the Cartesian product of two sets - </li>
+        <li><strong>40) ACID in Transactions:</strong> ACID stands for Atomicity, Consistency, Isolation, and Durability, which are properties ensuring reliability in database transactions - </li>
+        <li><strong>41) ThreadPool in C#:</strong> ThreadPool provides a pool of worker threads for executing asynchronous tasks - </li>
+        <li><strong>42) CQRS and Mediator:</strong> CQRS (Command Query Responsibility Segregation) separates read and write operations in an application, Mediator pattern promotes loose coupling by mediating communication between components - </li>
+        <li><strong>43) Value and Reference Types:</strong> Value types store their data directly, while reference types store a reference to their data on the heap - </li>
+        <li><strong>44) Collections:</strong> Collections in .NET include List, LinkedList, HashSet, Dictionary, etc. - </li>
+        <li><strong>45) Redis in C#:</strong> Redis is a distributed caching tool used in .NET applications for performance optimization - </li>
+        <li><strong>46) GRASP and GOF Design Patterns:</strong> GRASP (General Responsibility Assignment Software Patterns) and GOF (Gang of Four) design patterns provide solutions to common software design problems - </li>
+        <li><strong>47) Struct Keyword:</strong> Struct allocates in stack and is a value type. Struct cannot be protected because we cannot use inheritance in struct, only implement interface - </li>
+        <li><strong>48) Heap and Stack in C#:</strong> Heap is a region of memory used for dynamic memory allocation, while stack is a region of memory used for function call stack and local variables - </li>
+        <li><strong>49) RabbitMQ:</strong> RabbitMQ is a message broker that enables communication between distributed applications - </li>
+        <li><strong>50) MongoDB:</strong> MongoDB is a NoSQL database that stores data in flexible, JSON-like documents - read about mongobd.</li>
+        <li><strong>51) Redis:</strong> Redis is a distributed caching tool used in .NET applications for performance optimization - </li>
+    </ul>
+
+    <h2>.NET Advanced Topics</h2>
+    <ul>
+        <li><strong>1) Reflection:</strong> Describe a use case and the benefits of Reflection in .NET - </li>
+        <li><strong>2) Dynamic Type:</strong> Describe a use case for the dynamic type in .NET - </li>
+        <li><strong>3) Anonymous Classes:</strong> Explanation on how anonymous classes are instantiated in .NET and if they can be passed as function parameters - done.</li>
+        <li><strong>4) Lambda Expression:</strong> Explanation on why a Lambda expression forms a closure - done.</li>
+        <li><strong>5) Lazy Initialization:</strong> Accomplishing lazy initialization in .NET (Via Lazy<T> or custom implementation of this class) - done.</li>
+    </ul>	
+</body>
+</html>
