@@ -1,8 +1,0 @@
-OPEN SOURCE
-
-https://up-for-grabs.net/#/filters?tags=.net
-
-1) https://github.com/libgit2/libgit2sharp?tab=readme-ov-file
-2) https://github.com/akkadotnet/akka.net
-3) https://github.com/nhibernate/nhibernate-core
-4) https://github.com/App-vNext/Polly
