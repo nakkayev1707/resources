@@ -1,4 +1,4 @@
-OPEN SOURCE
+OPENSOURCE
 
 https://up-for-grabs.net/#/filters?tags=.net
 
